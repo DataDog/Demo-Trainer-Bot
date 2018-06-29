@@ -12,8 +12,8 @@ class Calendar:
         )
         self.service = discovery.build('calendar', 'v3', credentials=credentials)
 
-    def create_event(self, event_details):
-        result = self.service.events().insert(calendarId='primary', body=event_details).execute()
+    def create_event(self, event_details, calendarId='primary'):
+        result = self.service.events().insert(calendarId=calendarId, body=event_details).execute()
         print('Event Created: {}'.format(result.get('htmlLink')))
         return result
         

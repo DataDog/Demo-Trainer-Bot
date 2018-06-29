@@ -1,0 +1,8 @@
+# dev
+pytest
+expects
+
+# prod
+requests
+google-api-python-client
+google-auth

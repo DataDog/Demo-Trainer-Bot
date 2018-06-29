@@ -1,0 +1,7 @@
+Ask discovery questions to uncover the needs and interests of the customer. Demo with a focus on highlighting the features most important to them, based on:
+- their current cloud provider
+- the tools/applications they want to monitor
+- their current monitoring/management tools
+- their overall reason for considering Datadog.
+
+End with a short written exam based on the product knowledge you've developed throughout demo training.

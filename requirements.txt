@@ -1,8 +1,14 @@
 # dev
 pytest
+mock
+pytest-mock
 expects
 
 # prod
 requests
 google-api-python-client
 google-auth
+flask
+slackclient
+pyyaml
+requests

@@ -1,0 +1,69 @@
+{
+    "attachments": [
+        {
+            "mrkdwn_in": [
+                "text"
+            ],
+            "author_name": "Prerequisite",
+            "author_link": "https://datadoghq.com",
+            "text": "*Please share your work calendar with our demo bot*",
+            "fields": [
+                {
+                    "value": "Demo bot's email is demo-trainer@datadog-demodog.iam.gserviceaccount.com"
+                }
+            ]
+        },
+        {
+            "mrkdwn_in": [
+                "text"
+            ],
+            "author_name": "Step 1",
+            "author_link": "https://datadoghq.com",
+            "text": ":white_large_square: *Part I of demo training*",
+            "fields": [
+                {
+                    "value": "Walkthrough of the demo with no FAQ or curveball questions. :thinking_face:"
+                }
+            ]
+        },
+        {
+            "mrkdwn_in": [
+                "text"
+            ],
+            "author_name": "Step 2",
+            "author_link": "https://datadoghq.com",
+            "text": ":white_large_square: Demo with FAQ and curveball questions",
+            "fields": [
+                {
+                    "value": "Tests product knowledge beyond the script and ability to recognize and park curveballs appropriately."
+                }
+            ]
+        },
+        {
+            "mrkdwn_in": [
+                "text"
+            ],
+            "author_name": "Step 3",
+            "author_link": "https://datadoghq.com",
+            "text": ":white_large_square: Demo with Persona",
+            "fields": [
+                {
+                    "value": "Demo with a focus on highlighting the features most important to them, based on:\n- their current cloud provider\n- the tools/applications they want to monitor\n- their current monitoring/management tools\n- their overall reason for wanting Datadog"
+                }
+            ]
+        },
+        {
+            "mrkdwn_in": [
+                "text"
+            ],
+            "author_name": "Step 4",
+            "author_link": "https://datadoghq.com",
+            "text": ":white_large_square: Final test for demo certification",
+            "fields": [
+                {
+                    "value": "Ask discovery questions to uncover the needs and interests of the customer. Demo with a focus on highlighting the features most important to them, based on:\n- their current cloud provider\n- the tools/applications they want to monitor\n- their current monitoring/management tools\n- their overall reason for considering Datadog."
+                }
+            ]
+        }
+    ]
+}

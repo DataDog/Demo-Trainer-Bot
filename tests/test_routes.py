@@ -66,4 +66,15 @@ class TestFlaskRoutes:
 
                 response = c.post('/listening', data=json.dumps(data), content_type='application/json')
                 expect(response.status_code).to(equal(200))
+
+    def test_app_can_respond_to_challenges(self, mocker):
+        with app.app_context():
+            with app.test_client() as c:
+                data = {
+                    "token": os.environ.get("VERIFICATION_TOKEN"),
+                    "challenge": 'my challenge'
+                }
+
+                response = c.post('/listening', data=json.dumps(data), content_type='application/json')
+                expect(response.status_code).to(equal(200))
                 

@@ -30,7 +30,8 @@ def _event_handler(event_type, slack_event):
     if event_type == "app_mention":
         user_id = slack_event["event"]["user"]
         mention_text = slack_event["event"]["text"]
-        # TODO: Parse mention_text and respond
+        return make_response("TODO: Parse mention text", 200, {"X-Slack-No-Retry": 1})
+
     else:
         # TODO: "Hmmm... I do not understand, here are my available commands"
         message = "You have not added an event handler for the %s" % event_type
@@ -91,7 +92,7 @@ def hears():
                    %s\n\n" % (slack_event["token"], pyBot.verification)
         # By adding "X-Slack-No-Retry" : 1 to our response headers, we turn off
         # Slack's automatic retries during development.
-        make_response(message, 403, {"X-Slack-No-Retry": 1})
+        return make_response(message, 403, {"X-Slack-No-Retry": 1})
 
     # ====== Process Incoming Events from Slack ======= #
     # If the incoming request is an Event we've subcribed to

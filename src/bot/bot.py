@@ -3,7 +3,7 @@
 Python Slack Bot class for use with the pythOnBoarding app
 """
 import os
-import message
+from src.bot.message import Message
 
 from slackclient import SlackClient
 

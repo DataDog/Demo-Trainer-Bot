@@ -11,4 +11,5 @@ google-auth
 flask
 slackclient
 pyyaml
+gunicorn
 requests

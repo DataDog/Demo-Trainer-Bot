@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Python Slack Bot class for use with the pythOnBoarding app
-"""
 import os
 from src.bot.message import Message
 

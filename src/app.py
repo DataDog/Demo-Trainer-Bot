@@ -30,6 +30,7 @@ def _event_handler(event_type, slack_event):
     if event_type == "app_mention":
         user_id = slack_event["event"]["user"]
         mention_text = slack_event["event"]["text"]
+        channel = slack_event["event"]["channel"]
         return make_response("TODO: Parse mention text", 200, {"X-Slack-No-Retry": 1})
 
     else:

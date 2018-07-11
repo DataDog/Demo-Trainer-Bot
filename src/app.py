@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import json
+import logging
 from src.bot import bot
 from flask import Flask, request, make_response, render_template
 
@@ -81,6 +82,7 @@ def hears():
     # sends back.
     #       For more info: https://api.slack.com/events/url_verification
     if "challenge" in slack_event:
+        logging.info('Challenge received' + json.dumps(slack_event) )
         return make_response(slack_event["challenge"], 200, {"content_type":
                                                              "application/json"
                                                              })
